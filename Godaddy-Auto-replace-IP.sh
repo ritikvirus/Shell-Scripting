@@ -4,7 +4,7 @@
 PUBLIC_IP=$(curl -s http://169.254.169.254/latest/meta-data/public-ipv4)
 
 # Update the A record for your subdomain on GoDaddy === if you want setup with your root domain then replace with this command
-# response=$(curl -s -o /dev/null -w "%{http_code}" -X PUT "https://api.godaddy.com/v1/domains/ritikvirus.info/records/A/@.ritikvirus.info" \
+# response=$(curl -s -o /dev/null -w "%{http_code}" -X PUT "https://api.godaddy.com/v1/domains/ritikvirus.info/records/A/@" \
 response=$(curl -s -o /dev/null -w "%{http_code}" -X PUT "https://api.godaddy.com/v1/domains/ritikvirus.info/records/A/resume" \
      -H "Authorization: sso-key PASTE-HERE-KEY:PASTE-HERE-SECRETE-KEY" \
      -H "Content-Type: application/json" \
